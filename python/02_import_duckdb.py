@@ -13,6 +13,8 @@
 # set locally which python in pyenv to use
 # !pyenv versions 
 # !pyenv global 3.10.9
+# !pyenv global miniconda3-latest/envs/mlc-chat-venv
+# !pyenv global miniconda3-latest/envs/oi
 # path to which python is activated in pyenv 
 # !pyenv which python 
 # list all packages 
