@@ -12,10 +12,11 @@ pacman::p_load(DBI, duckdb)
 con <- dbConnect(duckdb::duckdb(), ":memory:")
 dbWriteTable(con, "iris", iris)
 data <- dbGetQuery(con, "SELECT * FROM iris")
-
+head(data, 2)
 
 # con <- DBI::dbConnect(duckdb::duckdb(), "md:")
 con <- DBI::dbConnect(duckdb::duckdb(), "local.duckdb")
+# duckdb # in terminal
 # DBI::dbExecute(con, "INSTALL 'motherduck';")
 # DBI::dbExecute(con, "LOAD 'motherduck';")
 DBI::dbGetQuery(
